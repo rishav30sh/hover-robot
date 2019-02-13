@@ -1,0 +1,172 @@
+h1{
+
+	text-align: center;
+}
+
+.robot{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+.head, .left-arm, .right-arm, .torso, .left-leg, .right-leg{
+	background-color: #5f93e8;
+}
+
+.head
+{
+	display: flex;
+	flex-wrap: wrap;
+	width: 200px;
+	height: 200px;
+	margin: 0px auto;
+	background-color: #5f93e8;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	margin-bottom: 10px;
+	transition:  2s;
+}
+
+
+.mouth{
+
+	width: 80px;
+	height: 10px;
+	border-radius :30px 30px 0 0;
+	border-bottom-left-radius :  15px;
+	position: relative;
+	background-color:white;
+	top:150px;
+	border-bottom: 4px solid black;
+	 transition: 2s ;
+
+
+}
+
+.left-eye, .right-eye{
+
+	display: flex;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	position: relative;
+	background-color:white;
+	top:80px;
+	transition: 2s;
+}
+
+
+.left-arm, .right-arm{
+
+	width:40px;
+	height: 150px;
+	position: relative;
+	border-radius: 20px 20px 20px 20px;
+	transition: transform 2s; 
+
+}
+
+
+.left-leg, .right-leg{
+	width:40px;
+	height:120px;
+	border-radius: 40px 40px 40px 40px;
+	transition: transform 2s; 
+
+}
+
+
+
+
+.left-eye{
+
+	left:25px;
+
+
+}
+
+.right-eye{
+	left:115px;
+}
+
+.upper-body{
+	height: 180px;
+}
+
+.torso{
+
+	display: flex;
+	width:200px;
+	height:200px;
+	border-radius: 0px 0px 30px 30px;
+}
+
+
+.left-arm{
+	right:60px;
+	
+}
+
+
+.right-arm{
+	left:180px;
+}
+
+
+.lower-body{
+	display: inline-flex;
+}
+
+
+.left-leg{
+	margin-left: 40px;
+}
+
+.right-leg{
+	flex-wrap: nowrap;
+	margin-left: 50px;
+}
+
+.left-leg:hover{
+	    transform: rotate(30deg);
+	    background-color: orange;
+
+}
+
+.right-leg:hover{
+	    transform: rotate(-30deg);
+	    background-color: orange;
+
+}
+
+.left-arm:hover{
+	    transform: rotate(90deg);
+	    background-color: orange;
+
+}
+
+.right-arm:hover{
+	    transform: rotate(-90deg);
+	    background-color: orange;
+
+}
+
+.mouth:hover {
+	border-radius :0 0 15px 15px;
+	
+   
+}
+
+.head:hover{
+	height: 250px;
+	background-color: orange;
+}
+
+.left-eye:hover{
+background-color: red;
+}
+
+.right-eye:hover{
+	background-color: red;
+}
